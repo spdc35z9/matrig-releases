@@ -102,11 +102,28 @@
       color: #a0b4d8;
       font-weight: 600;
     }
+    nav {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 24px;
+      font-size: 13px;
+    }
+    nav a {
+      color: #6c7a9c;
+    }
+    nav a.active {
+      color: #a0b4d8;
+      font-weight: 600;
+    }
     #en { display: none; }
   </style>
 </head>
 <body>
 <div class="container">
+  <nav>
+    <a href="index.html" class="active">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+  </nav>
   <div class="lang-switch">
     <a href="#" class="active" onclick="switchLang('ja'); return false;">日本語</a>
     <a href="#" onclick="switchLang('en'); return false;">English</a>
